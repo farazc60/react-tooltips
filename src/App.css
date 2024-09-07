@@ -1,38 +1,124 @@
-.App {
+.App{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tooltip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 100px;
+  padding: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Tooltip Item */
+.tooltip-item {
+  padding: 15px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #222;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Tooltip Styles */
+/* Tooltip 1: Rounded */
+.tooltip-rounded {
+  border-radius: 15px !important;
+  background-color: #4caf50 !important;
+  color: white !important;
+  padding: 10px !important;
+}
+
+/* Tooltip 2: Shadow */
+.tooltip-shadow {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+  background-color: #ff5722 !important;
+  color: white !important;
+  padding: 10px !important;
+}
+
+/* Tooltip 3: Circular */
+.tooltip-circle {
+  border-radius: 50% !important;
+  background-color: #ffeb3b !important;
+  color: #000 !important;
+  padding: 12px !important;
+  text-align: center !important;
+  font-size: 14px !important;
+}
+
+/* Tooltip 4: Large */
+.tooltip-large {
+  font-size: 18px !important;
+  padding: 15px !important;
+  background-color: #673ab7 !important;
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+/* Tooltip 5: Small */
+.tooltip-small {
+  font-size: 12px !important;
+  padding: 8px !important;
+  background-color: #009688 !important;
+  color: white !important;
+  border-radius: 4px !important;
+}
+
+/* Tooltip 6: Gradient */
+.tooltip-gradient {
+  background: linear-gradient(to right, #ff7e5f, #feb47b) !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+/* Tooltip 7: Border */
+.tooltip-border {
+  border: 2px solid #ff9800 !important;
+  background-color: #fff3e0 !important;
+  color: #ff9800 !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+/* Tooltip 8: Transparent */
+.tooltip-transparent {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+/* Tooltip 9: Icon */
+.tooltip-icon::before {
+  content: '🔔' !important;
+  margin-right: 8px !important;
+}
+.tooltip-icon {
+  background-color: #f44336 !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+}
+
+/* Tooltip 10: Pulse Effect */
+.tooltip-pulse {
+  background-color: #3f51b5 !important;
+  color: white !important;
+  padding: 10px !important;
+  border-radius: 8px !important;
+  animation: pulse 1.5s infinite !important;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    transform: scale(1.1);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: scale(1);
   }
 }
