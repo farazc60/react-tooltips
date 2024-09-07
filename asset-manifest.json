@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-tooltips/static/css/main.a0463697.css",
+    "main.js": "/react-tooltips/static/js/main.a44c40ab.js",
+    "static/js/453.d589e625.chunk.js": "/react-tooltips/static/js/453.d589e625.chunk.js",
+    "index.html": "/react-tooltips/index.html",
+    "main.a0463697.css.map": "/react-tooltips/static/css/main.a0463697.css.map",
+    "main.a44c40ab.js.map": "/react-tooltips/static/js/main.a44c40ab.js.map",
+    "453.d589e625.chunk.js.map": "/react-tooltips/static/js/453.d589e625.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0463697.css",
+    "static/js/main.a44c40ab.js"
+  ]
+}
